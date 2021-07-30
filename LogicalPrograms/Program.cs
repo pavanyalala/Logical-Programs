@@ -7,7 +7,7 @@ namespace LogicalPrograms
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to logical programs");
-            Console.WriteLine(" Choose a number to execute a program \n1. Fibonacci Series \n2. PerfectNumber \n3. PrimeNumber \n4. ReverseNumber \n5. Calender \n6. PaymentCalculation \n7. TeperatureConversion ");
+            Console.WriteLine(" Choose a number to execute a program \n1. Fibonacci Series \n2. PerfectNumber \n3. PrimeNumber \n4. ReverseNumber \n5. Calender \n6. PaymentCalculation \n7. TemperatureConversion \n8. Coupon number");
             int choice = Convert.ToInt32(Console.ReadLine());
             switch (choice)
             {
@@ -44,6 +44,11 @@ namespace LogicalPrograms
                 case 7:
                     TempaeratureConversion tempaeratureConversion = new TempaeratureConversion();
                     tempaeratureConversion.TempConvert();
+                    break;
+
+                case 8:
+                    CouponNumber couponNumber = new CouponNumber();
+                    couponNumber.CouponNum();
                     break;
 
                 default:
